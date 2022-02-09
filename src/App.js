@@ -6,7 +6,6 @@ export default function App() {
   return (
     <div>
       <PaintingList items={paintings}/>
-    </div>
-    
+    </div> 
   );
 }
