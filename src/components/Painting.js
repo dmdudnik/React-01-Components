@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import defaultImage from '../components/default.jpg'
 
-const Painting = ({ imgUrl = defaultImage, title, profileUrl, authorName = "неизвестно", price, quantity }) => {
+const Painting = ({ imgUrl = defaultImage, title, profileUrl, authorName, price, quantity }) => {
   return <div>
     <img src={imgUrl} alt= {title} width="480" />
     <h2>{title}</h2>
@@ -15,12 +15,12 @@ const Painting = ({ imgUrl = defaultImage, title, profileUrl, authorName = "не
 
 
 Painting.propTypes = {
-    imgUrl: PropTypes.string,
-    title: PropTypes.string,
-    profileUrl: PropTypes.string,
-    authorName: PropTypes.string,
-    price: PropTypes.number,
-    quantity: PropTypes.number,
+    imgUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    profileUrl: PropTypes.string.isRequired,
+    authorName: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
 }
 
 
