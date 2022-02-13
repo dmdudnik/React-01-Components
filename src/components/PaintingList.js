@@ -21,7 +21,7 @@ function PaintingList({ items }) {
 PaintingList.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
-    })),
+    }))
 
 }
 
