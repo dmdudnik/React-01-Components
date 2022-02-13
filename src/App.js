@@ -6,9 +6,8 @@ import paintings from './paintings.json';
 export default function App() {
   return (
     <div>
-      {/* <PaintingList items={paintings}/> */}
-      <Section title = "Топ недели"/>
-      <Section/>
+      <PaintingList items={paintings}/>
+      <Section title = 'Топ недели' />
     </div> 
   );
 }
